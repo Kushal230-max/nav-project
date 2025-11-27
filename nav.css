@@ -1,0 +1,392 @@
+@font-face {
+    font-family: chacha;
+    src: url(./NeueMachina-Regular_DQCmjH1st.ttf);
+}
+
+@font-face {
+    font-family: hell;
+    src: url(./HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2);
+}
+@font-face {
+    font-family: hellb;
+    src: url(./HelveticaNowDisplay-Bold_VMHV5twUMR_2SBNfxj1ry.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 55px;
+    font-family: chacha;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.275);
+    backdrop-filter: blur(10px); 
+}
+
+.nav1 img {
+    height: 70px;
+    width: 70px;
+}
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.nav1 h6 {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav2 h5 {
+    font-weight: 400;
+    font-size: medium;
+    color: white;
+    margin-right: 20px;
+}
+
+.nav2 h4 {
+    font-size: 20px;
+    display: none;
+    color: white;
+}
+
+.nav2 img {
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+}
+
+@media (max-width:550px) {
+    .nav2 h5 {
+        display: none;
+    }
+
+    .nav2 img {
+        display: none;
+    }
+
+    .nav2 h4 {
+        display: block;
+    }
+
+    .nav1 h6 {
+        font-size: 12px;
+    }
+
+    .nav1 img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .nav {
+        padding: 15px 35px;
+    }
+}
+
+main {
+    padding-top: 100px;
+}
+
+.section1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 55px;
+    font-family: hell;
+
+}
+
+.section1 .left {
+    width: 43%;
+}
+
+.section1 .left h1 {
+    font-size: 48px;
+}
+
+.section1 .left .tags {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 25px 0px;
+    flex-wrap: wrap;
+}
+
+.section1 .left .tags h4 {
+    background-color: #212121;
+    padding: 10px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+
+}
+
+.left .price {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.left .price .green {
+    color: #02e797;
+}
+
+.left .price .previous {
+    text-decoration: line-through;
+    color: #929292;
+    font-size: 25px;
+}
+
+.left .price .tax {
+    font-size: 25px;
+}
+
+.left h5 {
+    margin-top: 2px;
+    color: #02e797;
+    font-weight: 500;
+}
+
+.left .button {
+    margin-top: 20px;
+    display: flex;
+    gap: 13px;
+}
+
+.left .buy {
+    background-color: #02e797;
+    border: none;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 4px;
+}
+
+.left .view {
+    background-color: #353535;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 4px;
+}
+
+.left h6 {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.left h6 span {
+    color: #02e797;
+}
+
+.section1 .right {
+    width: 45%;
+}
+
+.right .right_in {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+}
+
+.right .img1 {
+    width: 100%;
+}
+
+.right .img1 img {
+    width: 100%;
+}
+
+.right .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 40px;
+    gap: 20px;
+
+}
+
+.right .text h4 {
+    background-color: #151515;
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.right .text h4 span {
+    color: #02e797;
+    font-weight: 550;
+}
+
+@media (max-width:1200px) {
+    .section1 .left h1 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width:800px) {
+
+    .section1 {
+        flex-direction: column-reverse;
+        /* padding: 15px 4vw; */
+    }
+
+    .section1 .left {
+        width: 100%;
+    }
+
+    .section1 .right {
+        width: 100%;
+    }
+
+    .section1 .left h1 {
+        margin-top: 15px;
+        font-size: 33px;
+    }
+
+    .right .img1 img {
+        width: 100%;
+        height: 50vw;
+        object-fit: cover;
+    }
+
+    .left .buy {
+        padding: 8px 15px;
+        font-size: 13px;
+        width: 43%;
+    }
+
+    .left .view {
+        padding: 8px 15px;
+        font-size: 13px;
+        width: 53%;
+    }
+
+    .right .text h4 {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .right .text {
+        padding: 10px;
+        padding-top: 20px;
+        gap: 10px;
+    }
+
+    .left .price {
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .left .price .previous {
+        font-size: 15px;
+    }
+
+    .left .price .tax {
+        font-size: 15px;
+    }
+
+    .left h5 {
+        margin-top: 2px;
+        color: #02e797;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .left h6 {
+        font-size: 12px;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    .section1 .left .tags {
+    gap: 5px;
+    margin: 20px 0px;
+}
+.section1 .left .tags h4 {
+    padding: 8px 10px;
+    font-size: 17px;
+}
+}
+
+@media (max-width:600px) {
+    .section1 .left h1 {
+        margin-top: 15px;
+        font-size: 6vw;
+    }
+}
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+}
+.section2 h1{
+    font-family: hellb;
+    font-size: 147px;
+    background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/mask%20Large_ZB4lGN8hWZ.png);
+    background-size:cover;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+.section2 .hide{
+    position: absolute;
+    filter: blur(60px);
+}
+.section2 h2{
+    font-family: hell;
+    font-size: 42px;
+    font-weight: 300;
+}
+@media (max-width:1000px){
+    .section2 h1{
+    font-size: 15vw;
+    white-space: nowrap;
+    
+}
+.section2 h2{
+    
+    font-size: 4vh;
+    text-align: center;
+}
+}
+@media (max-width:550px){
+    .section2 h2{
+    
+    font-size: 3vh;
+    text-align: center;
+}
+} 
